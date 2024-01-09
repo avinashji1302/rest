@@ -1,0 +1,26 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2{
+    color: #e59797;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+   form{
+     width: 60%;
+   }
+ }
+
+ .inputs{
+  label{
+    color: #ff7777;
+    font-size: 16px;
+
+  }
+  input{
+    background-color: #b7b7b7;;
+  }
+ }

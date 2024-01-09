@@ -1,0 +1,141 @@
+<!-- // Main Page -->
+<div class="container-fluid">
+  <div class="search">
+    <input type="text" class="input" placeholder="Search food here">
+    <button class="btn btn-danger" type="submit">Button</button>
+
+  </div>
+  <div class="tags">
+    <span (click)="getAllfoodItem()">All</span>
+    <span (click)="getByName('FastFood')">FastFood</span>
+    <span (click)="getByName('Pizza')">Pizza</span>
+    <span (click)="getByName('Sandwitch')">Lunch</span>
+    <span (click)="getByName('Burger')">Slow food</span>
+    <span (click)="getByName('Burger')">Burger</span>
+  </div>
+  <div class="items">
+
+    <div class="row">
+      <div *ngFor="let data of datas" class="col-md-3 col-sm-6 col_card">
+
+        <div class="card" routerLink="food/{{data.id}}">
+          <img [src]="[data.img]" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="title">
+              <div class="name">{{data.name}}</div>
+              <div class="heart">&#9829;</div>
+            </div>
+
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+
+            <div class="place_and_time">
+
+              <div class="place">
+                <span>delhi</span>
+                <span>Mumbai</span>
+                <span>Noida</span>
+
+              </div>
+
+              <div class="time">
+                <span><i class="fa-regular fa-clock"></i></span>
+                <span>{{data.time}} min </span>
+              </div>
+
+
+            </div>
+
+            <div class="price">
+              <p> {{data.price | currency}}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- // down page -->
+
+<div class="team" id="team">
+  <h3>Our Team</h3>
+  <div class="row team_member mx-3">
+    <div class="col-md-3 col-sm-6" *ngFor="let team of OurTeam">
+      <div class="card">
+        <img src="https://t4.ftcdn.net/jpg/06/35/20/15/360_F_635201516_G2TFpFPoFA6utXYNgFlgPJGwU24mj6CJ.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body text-center pb-0">
+          <h5 class="card-title">{{team.name}}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary mb-2">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Inquery -->
+
+<div class="inquery text-light" id="order">
+  <div class="row">
+    <div class="col-md-6">
+
+      <div class="restraunt text-center">
+        <h2>Our Restraunt</h2>
+        <img
+          src="https://assets.gqindia.com/photos/62a9d4653e8cdc9b632eb2ad/master/pass/10%20restaurants%20in%20Mumbai%20that%20offer%20the%20best%20sunset%20views.jpg"
+          alt="">
+      </div>
+
+    </div>
+    <div class="col-md-6 mt-2 inquery-form">
+      <h2 class="text-center">Your Order Please </h2>
+      <div class="form" autocomplete="off">
+        <form autocomplete="off" [formGroup]="Order" (ngSubmit)="onOrder()">
+          <div class="mb-3">
+            <label for="exampleInputName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp"
+              autocomplete="new-password" placeholder="Your name" formControlName="name">
+
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Phone No.</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              autocomplete="new-password" placeholder="Your phone" formControlName="phone">
+
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Order</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              autocomplete="new-password" placeholder="Your Order" formControlName="order">
+
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Any Comment</label>
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" formControlName="comment"
+              style="height: 100px"></textarea>
+
+          </div>
+          <div style="display: flex; justify-content: end;" class="mb-3">
+            <button type="submit" class="btn btn-primary me-2">Submit</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="order">
+  <h1>All Order here</h1>
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 mb-5">
+
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="id" class="text-center">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="phone">
+      <th mat-header-cell *matHeaderCellDef> Phone </th>
+      <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="order">
+      <th mat-header-cell *matHeaderCellDef> Order </th>
+      <td mat-cell *matCellDef="let element"> {{element.order}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="comment">
+      <th mat-header-cell *matHeaderCellDef> Other Comment </th>
+      <td mat-cell *matCellDef="let element"> {{element.comment}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="action" class="text-center">
+      <th mat-header-cell *matHeaderCellDef> Action </th>
+      <td mat-cell *matCellDef="let element" class="d-flex">
+
+        <span> <button mat-raised-button color="accent" class="m-2"
+            (click)="deleteOneItem(element.id)">Delete</button></span>
+      </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

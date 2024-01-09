@@ -1,0 +1,49 @@
+<div class="container-fluid mt-4">
+  <form action="" class="form">
+    <h3 class="heading">Edit your form</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Placeholder" [(ngModel)]="boxData.name" name="name">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+        </mat-form-field>
+      </div>
+
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Bio</mat-label>
+          <input matInput placeholder="Placeholder" [(ngModel)]="boxData.bio" name="bio">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+        </mat-form-field>
+      </div>
+
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Image</mat-label>
+          <input matInput placeholder="Placeholder" [(ngModel)]="boxData.img" name="img">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+        </mat-form-field>
+      </div>
+
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Istagram</mat-label>
+          <input matInput placeholder="Placeholder" [(ngModel)]="boxData.instagram" name="instagram">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+        </mat-form-field>
+      </div>
+
+      <div class="btn">
+        <button mat-raised-button color="primary" (click)="update(boxData.id)">Update</button>
+        <button mat-raised-button color="accent" (click)="closebox()">Close</button>
+      </div>
+    </div>
+  </form>
+
+
+</div>

@@ -1,0 +1,52 @@
+<div class="container-fluid mt-4">
+  <form [formGroup]="addDataItem" class="form">
+    <h3 class="heading">Add Your Item here</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Placeholder" name="name" formControlName="name">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+        </mat-form-field>
+      </div>
+
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Price</mat-label>
+          <input matInput placeholder="Placeholder" name="price" formControlName="price">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+
+        </mat-form-field>
+      </div>
+
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Image</mat-label>
+          <input matInput placeholder="Placeholder" name="img" formControlName="img">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+        </mat-form-field>
+
+        <!-- <input type="file" id="myFile" name="filename" formControlName="img" (change)="onFileSelected($event)"> -->
+      </div>
+
+      <div class="col-md-6">
+        <mat-form-field appearance="outline">
+          <mat-label>Time to cook</mat-label>
+          <input matInput placeholder="Placeholder" name="time" formControlName="time">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+        </mat-form-field>
+      </div>
+
+      <div class="btn">
+        <button mat-raised-button color="primary" (click)="Additme()" class="mx-3">Add item</button>
+        <button mat-raised-button color="accent" matDialogClose="true">Close</button>
+      </div>
+    </div>
+  </form>
+
+
+</div>

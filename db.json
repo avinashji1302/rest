@@ -1,0 +1,123 @@
+{
+  "datas": [
+    {
+      "id": 2,
+      "name": "Burger",
+      "price": 85,
+      "time": "10-20",
+      "img": "https://healthyrecipesblogs.com/wp-content/uploads/2015/10/asian-meatballs-featured-2022.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sandwitch",
+      "price": 45,
+      "time": "10-20",
+      "img": "https://healthyrecipesblogs.com/wp-content/uploads/2015/10/asian-meatballs-featured-2022.jpg"
+    },
+    {
+      "name": "Pizza",
+      "price": "2",
+      "time": "6-2",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPKdLs1K5IzyljH2L0ucq7Npxx_1oTrx2ZwO7wASDsJg&s",
+      "id": 4
+    },
+    {
+      "name": "Burger",
+      "price": "23",
+      "time": "25-30",
+      "img": "https://assets.learningwithexperts.com/f89ef932-d2af-4429-8b55-1da75b881020",
+      "id": 5
+    }
+  ],
+  "register": [
+    {
+      "name": "avinash",
+      "mobile": "893483944",
+      "email": "avi@gmail.com",
+      "password": "12345",
+      "admin": true,
+      "id": 1
+    },
+    {
+      "name": "fdsf",
+      "mobile": "fdsf",
+      "email": "fsdf",
+      "password": "fsdf",
+      "id": 2
+    },
+    {
+      "name": "Avnmgfg",
+      "mobile": "914027232532",
+      "email": "avti@gmail.com",
+      "password": "333332232",
+      "id": 3
+    },
+    {
+      "name": "",
+      "mobile": "",
+      "email": "avi@gmail.com",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "name": "avi@gmail.com",
+      "mobile": "",
+      "email": "",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "name": "",
+      "mobile": "",
+      "email": "",
+      "password": "",
+      "id": 6
+    }
+  ],
+  "team": [
+    {
+      "name": "Avinashdsdsd",
+      "img": "https://t4.ftcdn.net/jpg/06/35/20/15/360_F_635201516_G2TFpFPoFA6utXYNgFlgPJGwU24mj6CJ.jpg",
+      "instagram": "avi130288",
+      "bio": "He best of something",
+      "id": 1
+    },
+    {
+      "name": "Avinashdsdsd",
+      "img": "https://t4.ftcdn.net/jpg/06/35/20/15/360_F_635201516_G2TFpFPoFA6utXYNgFlgPJGwU24mj6CJ.jpg",
+      "instagram": "avi130288",
+      "bio": "He best of something",
+      "id": 2
+    },
+    {
+      "name": "Avinashdsdd",
+      "img": "https://t4.ftcdn.net/jpg/06/35/20/15/360_F_635201516_G2TFpFPoFA6utXYNgFlgPJGwU24mj6CJ.jpg",
+      "instagram": "avi1302",
+      "bio": "He is best of something",
+      "id": 3
+    },
+    {
+      "name": "Sameer",
+      "bio": "He is best of something",
+      "img": "sdsdsd",
+      "instagram": "sdsdsd",
+      "id": 4
+    }
+  ],
+  "orders": [
+    {
+      "name": "Avinsah ",
+      "phone": "avi@gmail.com",
+      "order": "gdfgdg",
+      "comment": "trrt",
+      "id": 1
+    },
+    {
+      "name": "kjhk",
+      "phone": "avi@gmail.com",
+      "order": "hjk",
+      "comment": "jhkk",
+      "id": 2
+    }
+  ]
+}

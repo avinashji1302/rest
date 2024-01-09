@@ -1,0 +1,83 @@
+$primary-color: #2ecc71;     // Green color
+$accent-color: #3498db;      // Blue color
+$background-color: #f9f9f9;  // Light gray background
+$text-color: #333;           // Dark text color
+$placeholder-color: #aaa;    // Light gray placeholder color
+
+.container-fluid {
+  background-color: $background-color;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  form {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+    .heading {
+      color: $primary-color;
+      margin-bottom: 20px;
+    }
+
+    .row {
+      width: 100%;
+
+      .col-md-6 {
+        .mat-form-field {
+          width: 100%;
+          margin-bottom: 15px;
+          transition: all 0.3s ease-in-out;
+
+          mat-label {
+            color: $primary-color;
+          }
+
+          input {
+            color: $text-color;
+            &::placeholder {
+              color: $placeholder-color;
+            }
+          }
+
+          mat-icon {
+            color: $accent-color;
+          }
+
+          &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        margin-top: 15px;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+          color: #fff;
+        }
+
+        &:last-child {
+          background-color: $accent-color;
+          margin-left: 10px;
+
+          &:hover {
+            background-color: darken($accent-color, 10%);
+          }
+        }
+      }
+    }
+  }
+}

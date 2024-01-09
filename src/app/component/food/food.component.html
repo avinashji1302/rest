@@ -1,0 +1,52 @@
+<div class="container ">
+  <div class="row">
+    <div class="col-md-5">
+
+      <img src="{{food.img}}" alt="" class="img-fluid">
+
+    </div>
+    <div class="col-md-7">
+      <div class="card">
+        <div class="card-body">
+          <div class="title">
+            <h3 class="name">{{food.name}}</h3>
+            <div class="heart">&#9829;</div>
+          </div>
+
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="place_and_time">
+
+            <div class="place">
+              <span>delhi</span>
+              <span>Mumbai</span>
+              <span>Noida</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="mb-0">Time to cook about 20 to 25 </p>
+          </div>
+
+          <div class="price">
+            <p> Price: <span class="text-primary"> {{ 9 | currency }}</span></p>
+          </div>
+        </div>
+
+        <div class="btn btn-danger" routerLink="/cart-page">Add to cart</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

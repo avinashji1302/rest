@@ -1,0 +1,274 @@
+
+
+
+// chatgpt
+
+// General Styles
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+// Search Section
+.search {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+
+  input {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease-in-out;
+
+    &:focus {
+      border-color: #007bff;
+    }
+  }
+
+  button {
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #c82333;
+    }
+  }
+}
+
+.tags {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  span {
+    margin-top: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+// Items Section
+.items {
+  width: 100%;
+  padding: 0px 20px;
+  .row {
+    display: flex;
+    // justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+      margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .card-body {
+      background-color: #bfbfbf;
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // background-color: ;
+
+
+        .name {
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .heart {
+          font-size: 24px;
+          color: #ff0707;
+          cursor: pointer;
+          transition: color 0.3s ease-in-out;
+
+          &:hover {
+            color: #c82333;
+          }
+        }
+      }
+
+      .star {
+        margin-top: 10px;
+        text-align: start;
+
+        .fa-star {
+          color: #ff0707;
+        }
+      }
+
+      .place_and_time {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .place {
+          span {
+            margin-right: 5px;
+            background-color: #9b9b9b;
+            color: #fff;
+            padding: 2px 5px;
+            border-radius: 5px;
+            font-size: 10px;
+            // gap: 5px;
+          }
+        }
+
+        .time {
+          span {
+            // margin-right: 5px;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .price {
+        text-align: start;
+        margin-top: 10px;
+        p {
+          font-size: 18px;
+          font-weight: bold;
+          color: #007bff;
+        }
+      }
+    }
+  }
+}
+
+// Team Section
+.team {
+  margin: 10px 0;
+  text-align: center;
+  background-color:#38393E;
+  padding-bottom: 20px;
+
+  h3 {
+   padding: 10px 0px;
+    // font-size: 24px;
+    color: rgb(245, 115, 115);
+  }
+
+  .team_member {
+    display: flex;
+    justify-content: center;
+
+    .card {
+      margin-top: 10px;
+      // width: 250px;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .card-body {
+        text-align: center;
+
+        h5 {
+          margin-top: 10px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        p {
+          margin-top: 10px;
+          font-size: 16px;
+          color: #6c757d;
+        }
+
+        .btn-primary {
+          background-color: #007bff;
+          border: none;
+          margin-top: 10px;
+          transition: background-color 0.3s ease-in-out;
+
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// restraunt
+.inquery{
+  width: 100%;
+  padding: 0px 20px;
+}
+.restraunt{
+  margin: 10px auto;
+
+  h2{
+    color: #e99494;
+  }
+
+  img{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    border-radius: 5px;
+  }
+
+}
+
+
+input , textarea{
+  background-color: #9b9b9b;
+
+}
+
+.inquery-form{
+  h2{
+    color: #cbf5ff;
+  }
+}
+
+

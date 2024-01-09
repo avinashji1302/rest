@@ -1,0 +1,73 @@
+<div class="container text-light">
+  <div class="row">
+
+    <div class="col-md-8 my-2">
+
+      <div class="row">
+
+        <div class="col-md-12 text-center" *ngIf="isItemsEmpty">
+          <h3>No Data Availble in cart</h3>
+        </div>
+        <h3 class="text-center">Your items</h3>
+        <div class="col-md-12 my-2"  *ngFor="let item of items let i = index">
+          <div class="card">
+            <div class="left">
+              <img src="{{item.img}}" alt="">
+
+              <p>{{item.name}}</p>
+            </div>
+
+            <!-- <div class="center">
+              <select class="form-select" aria-label="Default select example" #teams (change)="onSelected(teams.value)">
+                <option value="1">1</option>
+
+              </select>
+            </div> -->
+            <div class="right">
+              <span>{{item.price*selectedOption}} $</span>
+              <button class="btn btn-rounded" (click)="removeItem(i)">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="card">
+        <div class="left">
+          <img src="{{item.img}}" alt="">
+
+          <p>{{item.name}}</p>
+        </div>
+
+        <div class="center">
+          <select class="form-select" aria-label="Default select example" #teams (change)="onSelected(teams.value)">
+            <option value="1" >1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="right">
+          <span>{{item.price*selectedOption}}</span>
+          <button class="btn btn-rounded">Remove</button>
+        </div>
+      </div> -->
+
+    </div>
+
+
+    <div class="col-4">
+      <div class="list">
+        <div class="details">
+          <p>Count :{{items.length}} </p>
+          <p>Price :{{totalPrice}}$ </p>
+        </div>
+
+
+        <button class="btn btn-secondary" routerLink="/payment">Selected items</button>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
